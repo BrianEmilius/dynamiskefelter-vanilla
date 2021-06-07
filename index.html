@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dynamiske felter</title>
+</head>
+<body>
+	<form>
+		<div class="inputGroup">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+		</div>
+		<div class="inputGroup">
+			<label for="description">Description</label>
+			<textarea id="description" name="description"></textarea>
+		</div>
+
+		<fieldset>
+			<legend>Ingredients</legend>
+			<div class="inputGroup">
+				<input type="text" name="ingredients[]">
+			</div>
+			<div class="inputGroup">
+				<input type="text" name="ingredients[]">
+			</div>
+			<div class="inputGroup">
+				<input type="text" name="ingredients[]">
+			</div>
+		</fieldset>
+		<div>
+			<button type="button" class="addingredient">Add</button>
+			<button type="button" class="removeingredient">Remove</button>
+		</div>
+
+		<button type="submit">Save recipe</button>
+	</form>
+	<script src="/app.js"></script>
+</body>
+</html>
